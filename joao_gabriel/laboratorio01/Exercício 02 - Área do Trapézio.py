@@ -1,14 +1,11 @@
 """
-Laboratorio 01 - Exercício 02
-    Área do Trapézio
+     Laboratorio 01 - Exercício 02
+          Área do Trapézio
 """
 
 lab = 'Laboratório 01'
 frase = 'Área do Trapézio'
-print('-=-' * 20)
-print(f'{lab:^60}')
-print(f'{frase:^60}')
-print('-=-' * 20)
+print('-=' * 30, '\n' + f'{lab:^60}' '\n' + f'{frase:^60}' '\n' + '-=' * 30)
 
 base_menor = 4
 base_maior = 6
