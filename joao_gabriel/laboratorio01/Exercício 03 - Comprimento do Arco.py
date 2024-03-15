@@ -1,14 +1,11 @@
 """
-Laboratorio 01 - Exercício 03
-    Arco da Circunferência
+     Laboratorio 01 - Exercício 03
+        Arco da Circunferência
 """
 
 lab = 'Laboratório 01'
-frase = 'Área do Trapézio'
-print('-=-' * 20)
-print(f'{lab:^60}')
-print(f'{frase:^60}')
-print('-=-' * 20)
+frase = 'Arco da Circunferência'
+print('-=' * 30, '\n' + f'{lab:^60}' '\n' + f'{frase:^60}' '\n' + '-=' * 30)
 
 pi = 3.14
 angulo_30_graus = 30
