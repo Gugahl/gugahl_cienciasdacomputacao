@@ -1,15 +1,12 @@
 """
-Laboratorio 01 - Exercício 01
-    Graus para Radianos
+     Laboratorio 01 - Exercício 01
+          Graus para Radianos
 """
 
 #  Deixando o código mais bonito
 lab = 'Laboratório 01'
 frase = 'Transformando Graus em Radianos'
-print('-=-' * 20)
-print(f'{lab:^60}')
-print(f'{frase:^60}')
-print('-=-' * 20)
+print('-=' * 30, '\n' + f'{lab:^60}' '\n' + f'{frase:^60}' '\n' + '-=' * 30)
 
 #  Variáveis preestabelecidas
 pi = 3.14
