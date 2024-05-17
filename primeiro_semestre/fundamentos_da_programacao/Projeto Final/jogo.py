@@ -10,7 +10,7 @@ def main():
     x = largura / 2
     y = 0
     tela = display.set_mode((largura, altura))
-    display.set_caption('Jogo')
+    display.set_caption('Game')
     relogio = time.Clock()
 
     sair = False
