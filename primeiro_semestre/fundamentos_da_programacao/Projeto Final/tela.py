@@ -1,27 +1,16 @@
-from customtkinter import *
-from tkinter import *
-from botao import *
+from pygame import *
 
-set_appearance_mode('dark')
-set_default_color_theme('dark-blue')
+init()
+janela = display.set_mode((290, 174))
+display.set_caption('The legend of the warrior')
 
-login = CTk()
-login.title('Login do usuário')
-login.geometry("500x300")
+fundo = image.load("download.jpeg").convert_alpha()
+fundo = transform.scale(fundo, (290, 174))
 
-texto = CTkLabel(login, text='Fazer Login')
-texto.pack(padx=10, pady=10)
-
-email = CTkEntry(login, placeholder_text='Seu email')
-email.pack(padx=10, pady=10)
-
-senha = CTkEntry(login, placeholder_text='Sua senha', show='*')
-senha.pack(padx=10, pady=10)
-
-checkbox = CTkCheckBox(login, text='Lembrar Login')
-checkbox.pack(padx=10, pady=10)
-
-botao = CTkButton(login, text='Login', command=clique)
-botao.pack(padx=10, pady=10)
-
-login.mainloop()
+loop = True
+while loop:
+    for events in event.get():
+        if events.type == QUIT:
+            loop = False
+    display.blit(fundo, (0, 0))
+    display.update()

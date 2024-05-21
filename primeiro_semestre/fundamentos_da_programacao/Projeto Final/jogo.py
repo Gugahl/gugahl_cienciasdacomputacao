@@ -12,7 +12,6 @@ def main():
     tela = display.set_mode((largura, altura))
     display.set_caption('Game')
     relogio = time.Clock()
-
     sair = False
     while sair != True:
         relogio.tick(60)
@@ -26,5 +25,4 @@ def main():
             y = 0
         y += 1 
     quit()
-
 main()
