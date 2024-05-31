@@ -4,7 +4,7 @@ init()
 janela = display.set_mode((290, 174))
 display.set_caption('The legend of the warrior')
 
-fundo = image.load("download.jpeg").convert_alpha()
+fundo = image.load("imagem\download.jpeg").convert_alpha()
 fundo = transform.scale(fundo, (290, 174))
 
 loop = True
